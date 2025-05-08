@@ -1,0 +1,16 @@
+{% extends 'base.html' %}  {% block content %}
+    <div class="content">
+        <div class="page-content-wrapper">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>Editar Paciente</h2>
+                        <form method="post">
+                            {% csrf_token %}  {{ form.as_p }}  <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                            <a href="{% url 'pacienteList' %}" class="btn btn-default">Cancelar</a>  </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
