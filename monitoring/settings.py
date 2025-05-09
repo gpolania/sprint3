@@ -153,3 +153,10 @@ AUTHENTICATION_BACKENDS = [
     'monitoring.auth0backend.Auth0',  #  Asegúrate de que la ruta al backend Auth0 sea correcta
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sebastianc290701@gmail.com'
+EMAIL_HOST_PASSWORD = 'ntqd onnh ftyn ddkr'
+EMAIL_USE_TLS=True
